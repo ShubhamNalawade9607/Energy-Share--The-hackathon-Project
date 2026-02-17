@@ -1,4 +1,4 @@
-const API_BASE = 'const BASE_URL = https://energy-share.onrender.com/api';
+const API_BASE =  "/api";
 
 // Demo fallback data for when API fails
 const DEMO_CHARGERS = [
