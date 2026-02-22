@@ -11,7 +11,7 @@ const BookingRequest = {
             const result = await API.createBookingRequest(chargerId, startTime, durationHours);
             
             if (result.error) {
-                alert(`✅ Booking request sent! The charging station owner will review it shortly.`);
+                alert(`❌ Error: ${result.error || result.message}`);
                 return false;
             }
 
@@ -208,7 +208,7 @@ const OwnerBookingManagement = {
             const result = await API.startChargingSession(requestId);
 
             if (result.error) {
-                alert(`'✅ Charging session started!`);
+                alert(`✅ Charging session started!`);
                 return false;
             }
 
